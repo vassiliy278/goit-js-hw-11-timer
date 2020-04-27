@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            /* width: 70%; */
+            margin: 0 auto;
+            background-color: #777;
+            font-weight: bold;
+            font-family: monospace;
+        }
+        h1 {
+            text-align: center;
+        }
+        .timer {
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .field {
+            border: 1px solid black;
+            padding: 5px 0px;
+            border-radius: 20px;
+            background-color: #bbc;
+            box-shadow: 3px 3px #000;
+            margin: 5px;
+            width: 20%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+        }
+        .value {
+            display: flex;
+            flex-basis: 100%;
+            justify-content: center;
+            font-size: 50px;
+            /* border: 1px solid black; */
+
+        }
+        .label {
+            display: flex;
+            /* border: 1px solid black; */
+
+        }
+    </style>
+</head>
+<body>
+    <h1>To July, 17 - 2022 remains:</h1>
+    <div class="timer" id="timer-1">
+    <div class="field">
+        <span class="value" data-value="days">00</span>
+        <span class="label">Days</span>
+    </div>
+    
+    <div class="field">
+        <span class="value" data-value="hours">00</span>
+        <span class="label">Hours</span>
+    </div>
+    
+    <div class="field">
+        <span class="value" data-value="mins">00</span>
+        <span class="label">Minutes</span>
+    </div>
+    
+    <div class="field">
+        <span class="value" data-value="secs">00</span>
+        <span class="label">Seconds</span>
+    </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
