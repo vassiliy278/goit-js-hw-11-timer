@@ -12,6 +12,7 @@ class CountdownTimer {
             const current = Date.now();
             const currentDate = new Date(current);
             remainingTime = targetDate.getTime() - Date.now();
+            if (remainingTime < 0) {return}
             const deltaTime = new Date(remainingTime);
             const secs = Math.floor((remainingTime % (1000 * 60)) / 1000);
             const mins = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
